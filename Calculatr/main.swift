@@ -15,7 +15,7 @@ print("Enter an expression separated by returns:")
 let response = readLine(stripNewline: true)!
 var num: UInt = 0
 if (UInt(response) != nil) {
-   var num = UInt.init(response)!
+    num = UInt.init(response)!
 }
 else {
     print("Invalid input: Start with a number!")
@@ -46,7 +46,7 @@ if (response2 == "count" || oper == "count" && count == 2) {
     exit(0)
 }
 else if (response2 == "avg" || oper == "avg" && count == 2) {
-    print(total/count)
+    print(Double(total)/Double(count))
     exit(0)
 }
 else if (response2 != "" && count > 1) {
@@ -64,9 +64,9 @@ else if oper == "fact" {
 }
 else {
 
-    let resp2 = readLine(stripNewline: true)!
+    let resp3 = readLine(stripNewline: true)!
 
-    let num2 = UInt.init(resp2)!
+    let num2 = UInt.init(resp3)!
 
     if oper == "+" {
         print(num + num2)
@@ -78,7 +78,7 @@ else {
         print(num * num2)
     }
     else if oper == "/" {
-        print(num / num2)
+        print(Double(num) / Double(num2))
     }
     else if oper == "%" {
         print(num % num2)
