@@ -12,7 +12,7 @@ import Darwin
 print("Enter an expression separated by returns:")
 
 // initial number
-let response = readLine(stripNewline: true)!
+let response = readLine(strippingNewline: true)!
 var num: UInt = 0
 if (UInt(response) != nil) {
     num = UInt.init(response)!
@@ -22,7 +22,7 @@ else {
 }
 
 // operator
-let oper = readLine(stripNewline: true)!
+let oper = readLine(strippingNewline: true)!
 
 
 var count: UInt = 1
@@ -35,7 +35,7 @@ if temp != nil {
     while (temp != nil) {
         count += 1
         total += temp!
-        response2 = readLine(stripNewline: true)!
+        response2 = readLine(strippingNewline: true)!
         temp = UInt(response2)
         
     }
@@ -64,7 +64,7 @@ else if oper == "fact" {
 }
 else {
 
-    let resp3 = readLine(stripNewline: true)!
+    let resp3 = readLine(strippingNewline: true)!
 
     let num2 = UInt.init(resp3)!
 
